@@ -39,6 +39,19 @@ class ProjectsController < ApplicationController
     @project_item = Project.find(params[:id])
   end
 
+  def destroy
+    # find record
+    @project_item = Project.find(params[:id])
+
+    # destroy/delete record
+    @project_item.destroy
+
+    # redirect
+    respond_to do |format|
+      format.html { redirect_to projects_path, notice: 'Project was successfully destroyed.' }
+    end
+  end
+
   private
     def project_params
       params.require(:project).permit(
