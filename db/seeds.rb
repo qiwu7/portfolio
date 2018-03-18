@@ -49,3 +49,12 @@ puts "9 projects created"
 end
 
 puts "3 technologies created"
+
+User.create!(
+  email: "wqi@umich.edu",
+  name: "Qi Wu",
+  password: "password123!!",
+  password_confirmation: "password123!!",
+)
+
+puts "default user created"
