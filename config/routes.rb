@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :projects, except: [:show]
-  get 'project/:id', to: 'projects#show', as: 'project_show'
+  get "project/:id", to: "projects#show", as: "project_show"
 
-  get 'about-me', to: 'pages#about'
-  get 'contact', to: 'pages#contact'
+  get "about-me", to: "pages#about"
+  get "contact", to: "pages#contact"
 
   resources :blogs do
     member do
@@ -11,5 +12,5 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: 'pages#home'
+  root to: "pages#home"
 end
