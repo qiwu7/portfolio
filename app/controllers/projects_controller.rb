@@ -5,6 +5,7 @@ class ProjectsController < ApplicationController
 
   def new
     @project_item = Project.new
+    3.times { @project_item.technologies.build }
   end
 
   def create
@@ -53,11 +54,13 @@ class ProjectsController < ApplicationController
   end
 
   private
-    def project_params
-      params.require(:project).permit(
-        :title,
-        :subtitle,
-        :body,
-      )
-    end
+
+  def project_params
+    params.require(:project).permit(
+      :title,
+      :subtitle,
+      :body,
+      technologies_attributes: [:name],
+    )
+  end
 end
