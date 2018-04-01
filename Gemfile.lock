@@ -115,6 +115,8 @@ GEM
     pry-byebug (3.6.0)
       byebug (~> 10.0)
       pry (~> 0.10)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     puma (3.11.3)
     rack (2.0.4)
     rack-test (0.8.3)
@@ -209,6 +211,7 @@ DEPENDENCIES
   petergate (~> 1.8, >= 1.8.1)
   pg (>= 0.18, < 2.0)
   pry-byebug
+  pry-rails (~> 0.3.6)
   puma (~> 3.7)
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
