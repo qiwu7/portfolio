@@ -62,3 +62,4 @@ gem 'jquery-rails'
 gem 'qiwu_view_tool', '~> 0.1.0'
 # petergate
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+gem 'loofah', '~> 2.2.1'
