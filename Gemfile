@@ -59,3 +59,5 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 # Custom view tool gem
 gem 'wu_view_tool', git: "https://github.com/qiwu7/wu_view_tool"
+# petergate
+gem 'petergate', '~> 1.8', '>= 1.8.1'
