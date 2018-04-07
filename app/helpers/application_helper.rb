@@ -17,6 +17,6 @@ module ApplicationHelper
   end
 
   def copyright_generator
-    WuViewTool::Renderer.copyright('Qi Wu', 'All rights reserved')
+    QiwuViewTool::Renderer.copyright('Qi Wu', 'All rights reserved')
   end
 end
