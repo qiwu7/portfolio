@@ -65,3 +65,5 @@ gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'loofah', '~> 2.2.1'
 # font awesome
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
+# kaminari
+gem 'kaminari', '~> 0.17.0'
