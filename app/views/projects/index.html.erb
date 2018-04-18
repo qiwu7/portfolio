@@ -1,5 +1,10 @@
-<h1>Project Items</h1>
 
-<%= link_to "Create New Item", new_project_url if logged_in?(:site_admin) %>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <%= link_to "Create New Item", new_project_url if logged_in?(:site_admin) %>
 
-<%= render partial: "project_item", collection: @project_items %>
+    <div class="row">
+      <%= render partial: "project_item", collection: @project_items %>
+    </div>
+  </div>
+</div>
