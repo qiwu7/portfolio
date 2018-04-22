@@ -1,9 +1,7 @@
-<h1>Hi, <%= current_user.first_name if current_user %></h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-
-<h1>Blog Posts</h1>
-
-<%= @posts.inspect %>
-
-<h1>Skills</h1>
-<%= @skills.inspect %>
+<main role="main" class="inner cover">
+  <h1 class="cover-heading">Hi There!</h1>
+  <p class="lead">Are you ready to learn more about me and what I do?</p>
+  <p class="lead">
+    <%= link_to "Learn More", about_me_path, class: "btn btn-lg btn-secondary"%>
+  </p>
+</main>
