@@ -3,7 +3,7 @@
   <div class="container">
     <%= link_to "Create New Item", new_project_url if logged_in?(:site_admin) %>
 
-    <div class="row">
+    <div class="row sortable">
       <%= render partial: "project_item", collection: @project_items %>
     </div>
   </div>
