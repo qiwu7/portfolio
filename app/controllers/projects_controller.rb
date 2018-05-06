@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :set_project_item, only: [:edit, :update, :show, :destroy]
   layout "project"
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :edit, :update, :sort]}, site_admin: :all
 
   def index
     @project_items = Project.by_position
