@@ -6,7 +6,9 @@ Rails.application.routes.draw do
                sign_out: "logout",
                sign_up: "register",
              }
-  resources :projects, except: [:show]
+  resources :projects, except: [:show] do
+    put :sort, on: :collection
+  end
   get "project/:id", to: "projects#show", as: "project_show"
 
   get "about-me", to: "pages#about"
