@@ -69,5 +69,10 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'kaminari', '~> 0.17.0'
 # jquery ui
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+# uplading image
+gem 'mini_magick', '~> 4.8'
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.4'
 # redis
 gem 'redis', '~> 4.0', '>= 4.0.1'
