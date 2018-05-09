@@ -1,5 +1,7 @@
 class Project < ApplicationRecord
   includes Placeholder
+  mount_uploader :thumb_image, ProjectUploader
+  mount_uploader :main_image, ProjectUploader
 
   has_many :technologies
 
