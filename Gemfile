@@ -69,3 +69,5 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
 gem 'kaminari', '~> 0.17.0'
 # jquery ui
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+# redis
+gem 'redis', '~> 4.0', '>= 4.0.1'
