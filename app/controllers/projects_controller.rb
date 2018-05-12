@@ -17,7 +17,6 @@ class ProjectsController < ApplicationController
 
   def new
     @project_item = Project.new
-    3.times { @project_item.technologies.build }
   end
 
   def create
@@ -67,7 +66,7 @@ class ProjectsController < ApplicationController
       :body,
       :main_image,
       :thumb_image,
-      technologies_attributes: [:name],
+      technologies_attributes: [:id, :name, :_destroy],
     )
   end
 
