@@ -1,6 +1,6 @@
 <div class="col-md-4">
   <div class="card mb-4 box-shadow", data-id="<%= project_item.id %>">
-    <%= image_tag project_item.thumb_image, width: "100%" if project_item.thumb_image %>
+    <%= image_tag project_img(project_item.thumb_image, "thumb"), width: "100%" %>
     <div class="card-body">
       <p class="card-text">
         <span><%= link_to project_item.title, project_show_path(project_item) %></span> [<%= project_item.subtitle %>]
