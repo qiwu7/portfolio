@@ -76,3 +76,7 @@ gem 'carrierwave-aws', '~> 1.3'
 gem 'dotenv-rails', '~> 2.4'
 # redis
 gem 'redis', '~> 4.0', '>= 4.0.1'
+# cocoon
+gem 'cocoon', '~> 1.2', '>= 1.2.11'
+# notification tool using jQuery
+gem 'gritter', '~> 1.2'
