@@ -18,10 +18,15 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @blog = Blog.includes(:comments).friendly.find(params[:id])
-    @comment = Comment.new
+    if logged_in?(:site_admin) || @blog.published?
+      @blog = Blog.includes(:comments).friendly.find(params[:id])
+      @comment = Comment.new
 
-    @page_title = "Qi | #{@blog.title}"
+      @page_title = "Qi | #{@blog.title}"
+    else
+      redirect_to blogs_path, warning: "You are not authorized to access this page."
+    end
+
   end
 
   # GET /blogs/new
