@@ -11,4 +11,6 @@ class Blog < ApplicationRecord
     draft: 0,
     published: 1,
   }
+
+  scope :recent, -> { order(created_at: :desc) }
 end
