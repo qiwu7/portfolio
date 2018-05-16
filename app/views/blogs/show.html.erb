@@ -14,7 +14,7 @@
     <span class="breadcrumb-item active"><%= @blog.title %></span>
   </nav>
   <p>
-    <%= @blog.body %>
+    <%= markdown(@blog.body) %>
   </p>
 
   <!--start of comment form-->
