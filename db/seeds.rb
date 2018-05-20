@@ -51,10 +51,20 @@ end
 puts "3 technologies created"
 
 User.create!(
-  email: "wqi@umich.edu",
-  name: "Qi Wu",
+  email: "admin@site.com",
+  name: "Admin User",
+  password: "password123!!",
+  password_confirmation: "password123!!",
+  roles: "site_admin"
+)
+
+puts "1 admin user created"
+
+User.create!(
+  email: "regular@site.com",
+  name: "Regular User",
   password: "password123!!",
   password_confirmation: "password123!!",
 )
 
-puts "default user created"
+puts "1 regular user created"
