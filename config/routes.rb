@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :topics, only: [:index, :show]
+
   resources :comments
   devise_for :users,
              path: "",
