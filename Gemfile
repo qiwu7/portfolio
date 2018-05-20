@@ -83,3 +83,5 @@ gem 'gritter', '~> 1.2'
 # markdown
 gem 'redcarpet', '~> 3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+
+ruby "2.5.0"
