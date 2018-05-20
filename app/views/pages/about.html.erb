@@ -1,2 +1,47 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<div>
+  <h1>About Me</h1>
+  <h4>Always in beta: learning, exploring and improving</h4>
+  <div class="mt-4 container">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profile.jpeg", width: 200, alt: "profile image", class: "profile-img" %>
+
+      </div>
+      <div class="col-md-8">
+        <p>
+          I am a self taught programming enthusiast and currently working as a backend software developer at <%= link_to "Yoshi", "www.startyoshi.com" %>.
+        </p>
+        <p>
+          I worked as a structural engineer at WPM, a top 10 Engineering Consulting firm that provides Civil and Structural services. I was involved in several high profile (billion-dollar) projects during the time. I had also utilized my free time to pick up coding and created 20+ plugins and customized tools that were used internally across the firm.
+        </p>
+
+        <p>
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controls="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+        <div class="collapse" id="education">
+          <div class="card-block">
+            Shanghai Jiao Tong University (B.S.)
+          </div>
+          <div class="card-block">
+            University Of Michigan, Ann Arbor (B.S.)
+          </div>
+          <div class="card-block">
+            Stanford University (M.S.)
+          </div>
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
